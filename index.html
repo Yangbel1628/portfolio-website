@@ -1,202 +1,747 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO</title>
     <link rel="stylesheet" href="potfolio.css">
+
+
 </head>
+
 <body>
     <nav class="navbar">
         <div class="left-nav">
             <h4 class="left-name">Yangbel.dev</h4>
         </div>
         <ul class="nav-list">
-            <li><a  href="#home">HOME</a></li>
-            <li><a  href="#about">About</a></li> 
-            <li><a  href="#projects">Projects</a></li> 
-            <li><a  href="#contact">Contact</a></li>
-        </ul>      
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <div>
+    <div class="about-section">
         <div class="div2-about" id="home">
-            
-        <p class="head-title">Front-End React Developer &#x1F44B</p>
-        <p class="sub-head-about">Hi, I'm Yangbel Khampa. A passionate Front-end React Developer based in Uttarakhand, Ranikhet📍</p>
-            
-        <img class="img1-link" src="potfolio-img/message.png" alt="">
-        <img class="img2-x" src="potfolio-img/twitter (1).png" alt="">
+            <p id="titleContainer">
+                <span id="titleGlow" data-text="Full-Stack Web Developer 👋">
+                    Full-Stack Web <br> <span class="title-span">Developer 👋</span>
+                </span>
+
+                <!-- PARALLAX FLOATING PARTICLES -->
+            <div id="particles"></div>
+            </p>
+
+            <p class="sub-head-about">
+                Hi, I'm <span class="highlight-name">Yangbel Khampa</span>, a passionate Front-end React Developer from
+                Uttarakhand, Ranikhet📍
+            </p>
+            <div class="social-links">
+                <img class="img1-link" src="potfolio-img/message.png" alt="LinkedIn">
+                <img class="img2-x" src="potfolio-img/twitter (1).png" alt="X">
+            </div>
         </div>
 
         <div class="div3-profile">
             <div class="bubble-profile"></div>
-
+            <div class="glow-behind"></div>
         </div>
     </div>
 
-    <div class="div-tech">
-        <p   class=" pera-tech">Tech stock |</p>
-        <div class="div-img-tech">
-        <img class="img-html" src="potfolio-img/icons8-html5-48.png" alt="html">
-        <img class="img-css" src="potfolio-img/icons8-css3-48.png" alt="css">
-        <img class="img-javascript" src="potfolio-img/icons8-javascript-48.png" alt="javascript">
-        <img class="img-react" src="potfolio-img/icons8-react-js-48.png" alt="react">
-        <img class="img-bootstrap" src="potfolio-img/icons8-bootstrap-48.png" alt="bootstrap">
-        <img class="img-figma" src="potfolio-img/icons8-figma-48.png" alt="figma">
-        </div>
-    </div>
 
-    <div class="div-head-about">
-        <div class="div-sub-about">
-        <img class="img-aboutme" src="potfolio-img/top-view-white-office-desk-mobile-phone-laptop-coffee-cup-glasses-flowers-top-view-white-office-desk-mobile-phone-218667615.jpg" alt="">
-        <img  class="kazuha" src="potfolio-img/980eb8fe0abdee78e6b8b8e87acccf05.jpg">
-        </div>
-        <div class="div-sub-right-about" id="about">
-            <a><p class="pera-right-aboutme">ABOUT ME</p></a>
-            <P class="pera-right-about">A dedicatedFront-end Developer based in Uttarakhand, Ranikhet 📍</P>
-            <p class="pera-right-about2">As a junior Front-End Developer, I possess an impressed arsenaal of skills in HTML, CSS, javaScript, React, Bootstrap,
-                 and Figma. I excel in designing and maintaining responsive website that offer a smooth user experience. my expertise 
-                 lies in crafting dynamic, engaging interfaces through writiing clean and optimized code and utilizing cutting-edge development
-                  tools and techniques. I am a team player who thrives in collaboration with cross-functional teams to produce outstanding web applications.</p>
-        </div>
-    </div>
-
-    <div class="div-main-project">
-            <div class="div-left-project">
-                <p class="pera-portfol" id="projects">PORTFOLIO</p>
-        <P class="pera-sub-portfol">Each project is a unique piece of development 🧩</P>
-                <img class="image-project1" src="potfolio-img/Screenshot 2024-08-20 120308.png" alt="project1">
+    <!--tech stack-->
+    <div class="tech-section">
+        <h2 class="tech-title">Tech Stack <span class="line">|</span></h2>
+    
+        <!-- 3D CUBE -->
+        <div class="cube-wrapper">
+            <div class="cube" id="techCube">
+                <div class="face front"><img src="potfolio-img/javascript.png" alt="javaScript"></div>
+                <div class="face back"><img src="potfolio-img/react.png" alt="React"></div>
+                <div class="face right"><img src="potfolio-img/nodejs.png" alt="NodeJs"></div>
+                <div class="face left"><img src="potfolio-img/mongo-db.png" alt="MongoDB"></div>
+                <div class="face top"><img src="potfolio-img/html.png" alt="HTML"></div>
+                <div class="face bottom"><img src="potfolio-img/css.png" alt="CSS"></div>
             </div>
-            <div class="div-right-project">
-                <p class="pera-project-title1">Online Shopping🛍️</p>
-                <p class="pera-project-sub1">A Online shopping website is an online platform that allows
-                     users to book and look about the restaurant for personal or business 
-                     use. The website provides an interface for booking , reserving and about the restaurant.</p>
-                     <p class="pera-project-language1">HTML</p>
-                     <p class="pera-project-language11">CSS</p> 
-                     <div class="div-sub-code">
-                     <P CLASS="pera-project-code1">Code <img class="img-gethub1" src="potfolio-img/github.png" alt="gethub"></P>
-                     <P CLASS="pera-project-code11">live Demo <img class="img-share1" src="potfolio-img/share.png" alt="share"></P>
-                     </div>
-            </div>
-        
-    </div>
-
-     <!-- part 2 of project-->
-      <div class="div-main-project2">
-        <div class="div-left-project2">
-            <p class="pera-project-title2">Restaurant 🍲</p>
-            <p class="pera-project-sub2">This is a restaurant website that allows user to search
-                 about the restaurant and booking with various cuisine.</p>
-                 <p class="pera-project-language2">HTML / CSS</p>
-                 <p class="pera-project-language22">javaScript</p>
-                 <div class="div-sub-code2">
-                    <P CLASS="pera-project-code2">Code <img class="img-gethub2" src="potfolio-img/github.png" alt="gethub"></P>
-                    <P CLASS="pera-project-code22">live Demo <img class="img-share2" src="potfolio-img/share.png" alt="share"></P>
-                    </div>
-        </div>
-
-        <div class="div-right-project2">
-            <img class="image-project2" src="potfolio-img/Screenshot 2024-08-20 121014.png" alt="restaurant">
-        </div>
-      </div>
-
-      <!-- project 3-->
-
-      <div class="div-main-project3">
-        <div class="div-left-project3">
-            <img class="image-project3" src="potfolio-img/Screenshot 2024-08-22 232832.png" alt="project1">
-        </div>
-        <div class="div-right-project3">
-            <p class="pera-project-title3">Rock-Paper-Scissors🎮</p>
-            <p class="pera-project-sub3">Nothing is better then a time-pass game here we have a Rock-Paper-Scissors game to help user to spend a good chill time.</p>
-                 <p class="pera-project-language3">HTML</p>
-                 <p class="pera-project-language33">CSS</p> 
-                 <div class="div-sub-code3">
-                 <P CLASS="pera-project-code3">Code <img class="img-gethub3" src="potfolio-img/github.png" alt="gethub"></P>
-                 <P CLASS="pera-project-code33">live Demo <img class="img-share3" src="potfolio-img/share.png" alt="share"></P>
-                 </div>
         </div>
     
-</div>
-
-<!--project 4-->
-
-<div class="div-main-project2">
-    <div class="div-left-project2">
-        <p class="pera-project-title2">Youtube pro+</p>
-        <p class="pera-project-sub2">This is a restaurant website that allows user to search
-             about the restaurant and booking with various cuisine.</p>
-             <p class="pera-project-language2">HTML / CSS</p>
-             <p class="pera-project-language22">javaScript</p>
-             <div class="div-sub-code2">
-                <a href=""><P CLASS="pera-project-code2">Code <img class="img-gethub2" src="potfolio-img/github.png" alt="gethub"></P></a>
-                <P CLASS="pera-project-code22">live Demo <img class="img-share2" src="potfolio-img/share.png" alt="share"></P>
-                </div>
-    </div>
-
-    <div class="div-right-project2">
-        <img class="image-project3" src="potfolio-img/Screenshot 2024-08-23 121926.png" alt="restaurant"> 
-    </div>
-  </div>
-
-  <div>
-    <p class="pera-portfol2" id="contact">Contact</p>
-    <p class="pera-sub-portfol22">Don't be shy! hit me up👇</p>
-  </div>
-
-
-
-  
-
-
-
-
-
-  <div class="container1">
-    <div class="profile">
-        <img class="image1" src="potfolio-img/980eb8fe0abdee78e6b8b8e87acccf05.jpg" alt="tanjiro">
-    </div>
-    <div class="container11">
-        <div class="main-head">
-            <div class="supersimple">Yangbel.dev</div>
-            <div class="link-super">@shantanu9760@gmail.com</div>
+        <!-- HORIZONTAL STACK -->
+        <div class="stack-row" id="stackRow">
+            <img src="potfolio-img/figma.png">
+            <img src="potfolio-img/html.png">
+            <img src="potfolio-img/css.png">
+            <img src="potfolio-img/tailwind.png">
+            <img src="potfolio-img/javascript.png">
+            <img src="potfolio-img/react.png">
+            <img src="potfolio-img/nodejs.png">
+            <img src="potfolio-img/express-js.png">
+            <img src="potfolio-img/mongo-db.png">
         </div>
-        <div class="sub-head">
-              What is backend web development? A complete overview. New video is up!
+    </div>
+
+
+
+
+
+
+
+    <!--about-->
+    <div class="div-head-about">
+        <div class="div-sub-about">
+            <img class="img-aboutme"
+                src="potfolio-img/aboutBackground.jpg"
+                alt="background about">
+            <img class="kazuha" src="potfolio-img/980eb8fe0abdee78e6b8b8e87acccf05.jpg">
         </div>
-            <div class="container111">
-                <div class="grey"></div>
-              <div class="subsubhead">
-                <div class="youtuber">youtube.com</div>
-                <div class="subsub-head">Backend web development - My youtube channel</div>
-               </div>
+        <div class="div-sub-right-about" id="about">
+            <a>
+                <p class="pera-right-aboutme">ABOUT ME</p>
+            </a>
+            <p class="pera-right-about">A dedicated Front-end Developer based in Uttarakhand, Ranikhet 📍</p>
+            <p class="pera-right-about2">As a junior Front-End Developer, I possess an impressive arsenal of skills in
+                HTML, CSS, JavaScript, React, Bootstrap,
+                and Figma. I excel in designing and maintaining responsive websites that offer a smooth user experience.
+                My expertise
+                lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing
+                cutting-edge development
+                tools and techniques. I am a team player who thrives in collaboration with cross-functional teams to
+                produce outstanding web applications.</p>
+        </div>
+    </div>
+
+    <!-- PROJECT 1 -->
+    <div class="portfolio-header">
+        <div class="portfolio-header-left">
+            <p class="pera-portfol" id="projects">PORTFOLIO</p>
+            <p class="pera-sub-portfol">Each project is a unique piece of development 🧩</p>
+        </div>
+        <div class="portfolio-header-right">
+            <a href="https://github.com/Yangbel1628?tab=repositories" class="more-projects">
+                More Projects <span class="arrow">→</span>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="div-main-project">
+        <div class="div-left-project">
+            <img class="image-project1" src="potfolio-img/UI1.png" alt="project1">
+        </div>
+    
+        <div class="div-right-project">
+            <p class="pera-project-title1">Doon Valley Bikers 🏍️ – Service Design Project</p>
+    
+            <p class="pera-project-sub1">
+                A service design project focused on improving the rental experience at Doon Valley Bikers. We analyzed customer and
+                owner pain points to create a smoother, more efficient service flow.
+            </p>
+    
+            <p class="pera-project-language1">Figma</p>
+            <p class="pera-project-language11">Photoshop</p>
+    
+            <div class="div-sub-code">
+                <a href="#" class="pera-project-code1" target="_blank">
+                    Code <img class="img-gethub1" src="potfolio-img/github.png" alt="gethub">
+                </a>
+    
+                <a href="https://www.figma.com/proto/DJGOqEqS8yLEKbZvi8OGqV/Service-design-doon?node-id=3703-1329&t=HtIhRF30VC61THh5-1&scaling=scale-down&content-scaling=fixed&page-id=3297%3A6&starting-point-node-id=3703%3A1329" class="pera-project-code11" target="_blank">
+                    Live Demo <img class="img-share1" src="potfolio-img/share.png" alt="share">
+                </a>
             </div>
+        </div>
     </div>
-</div>
 
 
-
-
-
-
-  <div class="contact" id="contact-me">
-    <div class="container">
-      <div class="contact-content">
-        <h2>Contact Me</h2>
-        <p class="mail">
-          Get in touch with me <i class="fas fa-arrow-right"></i> shantanu9760@gmail.com
-        </p>
-        <p class="links">Or find me on:</p>
-        <img class="social1" src="potfolio-img/message.png" alt="">
-        <img class="social1" src="potfolio-img/twitter (1).png" alt="">
-        <img class="social1" src="potfolio-img/instagram (2).png" alt="">
-        
-      </div>
+    <!-- PROJECT 2 -->
+    <div class="div-main-project2">
+        <div class="div-left-project2">
+            <p class="pera-project-title2">Modern Product Showcase UI 🎧</p>
+            <p class="pera-project-sub2">
+                A modern product landing page designed in Figma, featuring a clean layout, dynamic color variations, responsive UI
+                elements, and an intuitive product showcase for BOAT Airdopes.
+            </p>
+            <p class="pera-project-language2">Figma</p>
+            <p class="pera-project-language22">Photoshop</p>
+    
+            <div class="div-sub-code2">
+                <p class="pera-project-code2">
+                    <a href="YOUR_GITHUB_LINK" target="_blank" class="anchor-tag">
+                        Code <img class="img-gethub2" src="potfolio-img/github.png" alt="gethub">
+                    </a>
+                </p>
+    
+                <p class="pera-project-code22">
+                    <a href="https://www.figma.com/proto/DJGOqEqS8yLEKbZvi8OGqV/Service-design-doon?node-id=3040-4&t=p6OmRkVE110FFGuC-1&scaling=scale-down&content-scaling=fixed&page-id=3040%3A3&starting-point-node-id=3040%3A586" target="_blank" class="anchor-tag">
+                        Live Demo <img class="img-share2" src="potfolio-img/share.png" alt="share">
+                    </a>
+                </p>
+            </div>
+        </div>
+    
+        <div class="div-right-project2">
+            <img class="image-project2" src="potfolio-img/UI2.png" alt="project2">
+        </div>
     </div>
+
+
+    <!-- PROJECT 3 -->
+    <div class="div-main-project3">
+        <div class="div-left-project3">
+            <img class="image-project3" src="potfolio-img/cryptoHunter.png" alt="project3">
+        </div>
+    
+        <div class="div-right-project3">
+            <p class="pera-project-title3">Crypto Horizon 🪙</p>
+    
+            <p class="pera-project-sub3">
+                A sleek and modern crypto tracker that helps users view real-time prices, market trends, and coin insights with an
+                easy-to-use interface. Built for speed, clarity, and smooth user interaction.
+            </p>
+    
+            <p class="pera-project-language3">React</p>
+            <p class="pera-project-language33">CSS</p>
+    
+            <div class="div-sub-code3">
+    
+                <!-- CODE LINK -->
+                <a class="pera-project-code3" href="https://github.com/Yangbel1628/Crypto-Horizon" target="_blank">
+                    Code
+                    <img class="img-gethub3" src="potfolio-img/github.png" alt="github">
+                </a>
+    
+                <!-- LIVE DEMO LINK -->
+                <a class="pera-project-code33" href="https://crypto-horizon.vercel.app" target="_blank">
+                    Live Demo
+                    <img class="img-share3" src="potfolio-img/share.png" alt="share">
+                </a>
+    
+            </div>
+        </div>
+    </div>
+
+
+    <!-- PROJECT 4 -->
+    <div class="div-main-project4">
+        <div class="div-left-project4">
+            <p class="pera-project-title4">Gym Management System 🏋️‍♂️</p>
+            <p class="pera-project-sub4">
+                A complete gym management web app built to handle members, plans, attendance, and payments. Designed with a clean UI and
+                smooth user experience, making gym data easy to manage and access.
+            </p>
+            <p class="pera-project-language4">PHP </p>
+            <p class="pera-project-language44">JavaScript</p>
+    
+            <div class="div-sub-code4">
+    
+                <a href="https://github.com/Yangbel1628/gym-manager" target="_blank" class="pera-project-code4">
+                    Code <img class="img-gethub4" src="potfolio-img/github.png" alt="github">
+                </a>
+    
+                <a href="https://gym-manager.vercel.app" target="_blank" class="pera-project-code44">
+                    Live Demo <img class="img-share4" src="potfolio-img/share.png" alt="share">
+                </a>
+    
+            </div>
+        </div>
+    
+        <div class="div-right-project4">
+            <img class="image-project4" src="potfolio-img/dashboard.png" alt="youtube">
+        </div>
+    </div>
+
+    <!-- PROJECT 5 -->
+    <div class="div-main-project5">
+        <div class="div-left-project5">
+            <img class="image-project5" src="potfolio-img/spaceWars.png" alt="project3">
+        </div>
+    
+        <div class="div-right-project5">
+            <p class="pera-project-title5">Space Wars🎮</p>
+            <p class="pera-project-sub5">
+                A fast-paced space game where players dodge meteors, collect stars, and compete for the highest score on the
+                leaderboard.
+            </p>
+    
+            <p class="pera-project-language5">React</p>
+            <p class="pera-project-language55">CSS</p>
+    
+            <div class="div-sub-code5">
+    
+                <!-- Code Button -->
+                <a href="https://github.com/Yangbel1628/Space-Wars" target="_blank" class="pera-project-code5">
+                    Code
+                    <img class="img-gethub5" src="potfolio-img/github.png" alt="github">
+                </a>
+    
+                <!-- Live Demo Button -->
+                <a href="https://space-wars-lyart.vercel.app" target="_blank" class="pera-project-code55">
+                    Live Demo
+                    <img class="img-share5" src="potfolio-img/share.png" alt="share">
+                </a>
+    
+            </div>
+        </div>
+    </div>
+
+
+    <!-- PROJECT 6 -->
+    <div class="div-main-project6">
+        <div class="div-left-project6">
+            <p class="pera-project-title6">Weather Wizard🌤️</p>
+            <p class="pera-project-sub6">
+                A simple yet beautiful weather web app that provides live temperature and forecast using real-time API
+                data.
+            </p>
+    
+            <p class="pera-project-language6">React</p>
+            <p class="pera-project-language66">CSS</p>
+    
+            <div class="div-sub-code6">
+    
+                <!-- Code Link -->
+                <a href="https://github.com/Yangbel1628/WeatherWizard" target="_blank" class="pera-project-code6">
+                    Code
+                    <img class="img-gethub6" src="potfolio-img/github.png" alt="github">
+                </a>
+    
+                <!-- Live Demo Link -->
+                <a href="https://basic-web-calculator-tu6b.vercel.app" target="_blank" class="pera-project-code66">
+                    Live Demo
+                    <img class="img-share6" src="potfolio-img/share.png" alt="share">
+                </a>
+    
+            </div>
+        </div>
+    
+        <div class="div-right-project6">
+            <img class="image-project6" src="potfolio-img/weatherWizard.png" alt="weather app">
+        </div>
+    </div>
+
+
+
+
+    <!-- Vibe section -->
+    <section class="vibe-section">
+        <h2 class="vibe-title">Things That Define Me ✨</h2>
+        <div class="vibe-container">
+            <div class="vibe-card">🌤️ Calm Mindset</div>
+            <div class="vibe-card">🎧 LoFi Coder</div>
+            <div class="vibe-card">⚔️ Kazuha Main</div>
+            <div class="vibe-card">🧩 Problem Solver</div>
+            <div class="vibe-card">⚡ Fast Learner</div>
+            <div class="vibe-card">🎨 Clean UI Lover</div>
+            <div class="vibe-card">🔵 Minimalism</div>
+            <div class="vibe-card">🧠 Tech Obsessed</div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!--Resume-->
+    <section class="resume-section">
+        <div class="resume-box">
+            <h2 class="resume-title">Download My Resume</h2>
+            <p class="resume-subtitle">A clean overview of my skills, projects & journey.</p>
+    
+            <button class="resume-btn">
+                Download Resume
+                <span class="resume-arrow">→</span>
+            </button>
+        </div>
+    </section>
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    <!--contact-->
+    <section id="contact" class="contact-section">
+        <div class="contact-header">
+            <p class="pera-portfol2">Contact</p>
+            <p class="pera-sub-portfol22">Don’t be shy! Hit me up 👇</p>
+        </div>
+
+        <div class="contact-card">
+            <!-- Left side -->
+            <div class="contact-left">
+                <img src="potfolio-img/980eb8fe0abdee78e6b8b8e87acccf05.jpg" alt="profile" class="contact-avatar">
+                <h3>Yangbel.dev</h3>
+                <p class="contact-email">📧 shantanu9760@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Yangbel1628" target="_blank">💻 GitHub</a>
+                    <a href="#" target="_blank">🔗 LinkedIn</a>
+                </div>
+            </div>
+
+            <!-- Right side -->
+            <div class="contact-right">
+                <h2>Let’s Build Something Great Together 🤝</h2>
+                <p>Have an idea, project, or collaboration in mind? Let’s connect and make it real.</p>
+
+                <button class="talk-btn" id="talkBtn">
+                    <span class="circle"></span>
+                    <span class="text">Let’s Talk ✨</span>
+                </button>
+
+
+            </div>
+        </div>
+    </section>
+
+
     <script>
+        // ==========================
+        // NAVBAR INTERACTIONS
+        // ==========================
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector('.hamburger');
+            const navList = document.querySelector('.nav-list');
+
+            if (hamburger && navList) {
+                hamburger.addEventListener('click', () => {
+                    navList.classList.toggle('active');
+                    // Animate hamburger bars
+                    hamburger.classList.toggle('open');
+                });
+            }
+        });
+
+
+
+        //full stack
+        // =========================================
+        // PREMIUM TITLE INTERACTION + PARTICLES
+        // =========================================
+
+        const title = document.getElementById("titleGlow");
+        const container = document.getElementById("titleContainer");
+        const particlesContainer = document.getElementById("particles");
+
+        // Add soft backlight
+        const backLight = document.createElement("div");
+        backLight.classList.add("title-backlight");
+        container.appendChild(backLight);
+
+        // Floating effect
+        title.classList.add("float");
+
+
+        // --------------- PARALLAX TILT ---------------
+        document.addEventListener("mousemove", (e) => {
+            const rect = title.getBoundingClientRect();
+            const x = e.clientX - (rect.left + rect.width / 2);
+            const y = e.clientY - (rect.top + rect.height / 2);
+
+            const rotateX = (y / rect.height) * -12;
+            const rotateY = (x / rect.width) * 12;
+
+            title.style.transform =
+                `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+        });
+
+
+        // --------------- BACKLIGHT COLOR CYCLE ---------------
+        let t = 0;
+        function colorCycle() {
+            t += 0.003;
+            const morning = "rgba(255,235,210,0.55)";
+            const noon = "rgba(210,230,255,0.55)";
+            const evening = "rgba(255,200,220,0.55)";
+            const neutral = "rgba(230,230,230,0.55)";
+
+            const palette = [morning, noon, evening, neutral];
+            const index = Math.floor(t) % palette.length;
+
+            backLight.style.background =
+                `radial-gradient(circle, ${palette[index]}, transparent)`;
+        }
+        setInterval(colorCycle, 80);
+
+
+        // --------------- FLOATING PARTICLES ---------------
+        function createParticle() {
+            const p = document.createElement("div");
+            p.className = "particle";
+
+            p.style.left = Math.random() * 100 + "%";
+            p.style.top = "120%";
+            p.style.animationDuration = (4 + Math.random() * 3) + "s";
+            p.style.transform = `scale(${0.8 + Math.random() * 0.6})`;
+
+            particlesContainer.appendChild(p);
+
+            setTimeout(() => p.remove(), 5000);
+        }
+
+        setInterval(createParticle, 350);
+
+
+
+        //tech stack
+        const cube = document.getElementById("techCube");
+            const row = document.getElementById("stackRow");
+            const wrapper = document.querySelector(".cube-wrapper");
+
+            let open = false;
+            let mouseActive = true;
+            let autoRotate = true;
+
+            // Starting angles
+            let angleX = -25;
+            let angleY = 35;
+
+            // ========== AUTO ROTATION ==========
+            function rotateCube() {
+                if (autoRotate && !open) {
+                    angleY += 0.3;   // smooth
+                    angleX += 0.15;  // smooth
+                    cube.style.transform = `
+            translateX(-50%)
+            rotateX(${angleX}deg)
+            rotateY(${angleY}deg)
+            scale(1)
+        `;
+                }
+                requestAnimationFrame(rotateCube);
+            }
+            rotateCube();
+
+
+            // ========== CLICK — OPEN HORIZONTAL STACK ==========
+            cube.addEventListener("click", () => {
+                open = !open;
+
+                if (open) {
+                    mouseActive = false;
+                    autoRotate = false;
+
+                    row.classList.add("active");
+                    row.style.opacity = 1;
+                    row.style.pointerEvents = "auto";
+
+                    // nice smooth open pose
+                    cube.style.transition = "transform .7s ease";
+                    cube.style.transform = `
+            translateX(-50%)
+            rotateX(-10deg)
+            rotateY(20deg)
+            scale(1.22)
+        `;
+                } else {
+                    mouseActive = true;
+                    autoRotate = true;
+
+                    row.classList.remove("active");
+                    row.style.opacity = 0;
+                    row.style.pointerEvents = "none";
+
+                    cube.style.transition = "transform .7s ease";
+                    cube.style.transform = `
+            translateX(-50%)
+            rotateX(${angleX}deg)
+            rotateY(${angleY}deg)
+            scale(1)
+        `;
+                }
+            });
+
+
+            // ========== SMOOTH HOVER MOUSE CONTROL ==========
+            wrapper.addEventListener("mousemove", (e) => {
+                if (!mouseActive || open) return; // don't move while opened horizontally
+
+                autoRotate = false;
+
+                let rect = wrapper.getBoundingClientRect();
+                let x = (e.clientX - rect.left - rect.width / 2) / 3;
+                let y = (e.clientY - rect.top - rect.height / 2) / 3;
+
+                cube.style.transition = "transform 0.06s ease-out";
+                cube.style.transform = `
+        translateX(-50%)
+        rotateX(${-y}deg)
+        rotateY(${x}deg)
+        scale(1.08)
+    `;
+            });
+
+
+            // ========== MOUSE LEAVE → RETURN TO AUTO ROTATE ==========
+            wrapper.addEventListener("mouseleave", () => {
+                if (!mouseActive || open) return;
+
+                autoRotate = true;
+
+                cube.style.transition = "transform .6s ease";
+                cube.style.transform = `
+        translateX(-50%)
+        rotateX(${angleX}deg)
+        rotateY(${angleY}deg)
+        scale(1)
+    `;
+            });
+
+
+
+
+            //about me section
+            const box = document.querySelector(".div-sub-about");
+                const img = document.querySelector(".img-aboutme");
+
+                box.addEventListener("mousemove", (e) => {
+                    const r = box.getBoundingClientRect();
+                    const x = (e.clientX - r.left) / r.width;
+                    const y = (e.clientY - r.top) / r.height;
+
+                    const rotateX = (y - 0.5) * -12;
+                    const rotateY = (x - 0.5) * 12;
+
+                    img.style.transform = `
+        scale(1.05)
+        rotateX(${rotateX}deg)
+        rotateY(${rotateY}deg)
+    `;
+                });
+
+                box.addEventListener("mouseleave", () => {
+                    img.style.transform = "scale(1) rotateX(0deg) rotateY(0deg)";
+                });
+
+
+
+
+        //project section
+        document.querySelectorAll('[class^="div-main-project"]').forEach(card => {
+                card.style.transition = "transform 0.3s ease";  // <-- ADD THIS
+
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    card.style.transform = `rotateY(${x * 0.05}deg) rotateX(${-y * 0.05}deg)`;
+                });
+
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+                });
+            });
+
+
+
+
+             //vibe action
+             
+                // Tilt effect
+                document.querySelectorAll(".vibe-card").forEach(card => {
+                    card.addEventListener("mousemove", e => {
+                        const rect = card.getBoundingClientRect();
+                        const x = e.clientX - rect.left;
+                        const y = e.clientY - rect.top;
+                        const rotateY = ((x / rect.width) - 0.5) * 15;
+                        const rotateX = ((y / rect.height) - 0.5) * -15;
+                        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+                    });
+
+                    card.addEventListener("mouseleave", () => {
+                        card.style.transform = "rotateX(0) rotateY(0) scale(1)";
+                    });
+                });
+
+                // Scroll fade-in
+                const vibeCards = document.querySelectorAll(".vibe-card");
+                function showCards() {
+                    vibeCards.forEach(card => {
+                        const rect = card.getBoundingClientRect();
+                        if (rect.top < window.innerHeight - 50) {
+                            card.classList.add("show");
+                        }
+                    });
+                }
+                window.addEventListener("scroll", showCards);
+                showCards();
+
+
+
+
+
+
+
+
+                //resume
+                const resumeBtn = document.querySelector(".resume-btn");
+
+                    if (resumeBtn) {
+                        resumeBtn.addEventListener("click", () => {
+                            resumeBtn.style.setProperty('--btn-scale', '0.95');
+
+                            setTimeout(() => {
+                                resumeBtn.style.setProperty('--btn-scale', '1');
+                            }, 160);
+
+                            // Trigger download
+                            const link = document.createElement('a');
+                            link.href = 'potfolio-img/Yangbel-Khampa-FlowCV-Resume-20251026 (1).pdf';  // <-- your file location
+                            link.download = 'Yangbel_Resume.pdf';
+                            link.click();
+                        });
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // ==========================
+        // MAIL BUTTON
+        // ==========================
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const talkBtn = document.querySelector('.talk-btn');
+            if (!talkBtn) return;
+
+            talkBtn.addEventListener('click', () => {
+                talkBtn.classList.add('active');
+
+                setTimeout(() => {
+                    const email = "shantanu9760@gmail.com";
+                    const subject = "Hello Yangbel!";
+                    const body = "I wanted to get in touch with you.";
+                    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+                    talkBtn.classList.remove('active');
+                }, 1400);
+            });
+        });
+
+
 
     </script>
+
+
+
+
 </body>
+
 </html>

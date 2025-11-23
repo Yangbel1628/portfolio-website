@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Button</title>
+    <style>
+        .talk-btn {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(90deg, #1a1a40, #2336e0);
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 12px 28px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+
+        .talk-btn .text {
+            position: relative;
+            z-index: 2;
+        }
+
+        .talk-btn .circle {
+            position: absolute;
+            top: 50%;
+            left: -40px;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            background: radial-gradient(circle, #ffffff, #add8ff 40%, transparent 70%);
+            border-radius: 50%;
+            opacity: 0;
+            transition: all 1s ease;
+            z-index: 1;
+        }
+
+        .talk-btn.active .circle {
+            left: calc(100% - 20px);
+            opacity: 1;
+            animation: orbit 1.4s ease forwards;
+        }
+
+        @keyframes orbit {
+            0% {
+                left: -30px;
+                background: radial-gradient(circle, #ffffff, #add8ff 40%, transparent 70%);
+                box-shadow: 0 0 10px #9ad5ff, 0 0 20px #6eb5ff;
+            }
+
+            50% {
+                background: radial-gradient(circle, #fffbd5, #ffd86a 40%, transparent 70%);
+                box-shadow: 0 0 20px #ffd86a, 0 0 40px #ffcc33;
+            }
+
+            100% {
+                left: calc(100% - 20px);
+                background: radial-gradient(circle, #fff5c7, #ff9f33 40%, transparent 70%);
+                box-shadow: 0 0 25px #ffb833, 0 0 50px #ff9f33;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="talk-btn" id="talkBtn">
+        <span class="circle"></span>
+        <span class="text">Let’s Talk ✨</span>
+    </button>
+
+    <script>
+        const talkBtn = document.getElementById('talkBtn');
+
+        talkBtn.addEventListener('click', () => {
+            // Trigger animation
+            talkBtn.classList.add('active');
+
+            // Remove class after animation
+            setTimeout(() => {
+                talkBtn.classList.remove('active');
+            }, 1400);
+        });
+    </script>
+
+</body>
+
+</html>
